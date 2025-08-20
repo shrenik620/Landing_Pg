@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy";
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#left {
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+
+#lnav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 30px;
+}
+
+#lnavr {
+  display: flex;
+  align-items: center;
+}
+
+#lnavr a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#lnavr i {
+  color: rgb(242, 39, 20);
+}
+
+#left #textcenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#textcenter h1 {
+  font-size: 90px;
+  font-weight: 900;
+}
+
+#textcenter p {
+  opacity: 0.6;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#textcenter a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+#right {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(153, 166, 177);
+}
+
+#rtop {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  background-color: blueviolet;
+}
+
+#rbottom {
+  width: 100%;
+  height: 50%;
+  background-image: url(https://images.unsplash.com/photo-1648299817729-d50e442a151d?q=80&w=1012&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+#rtopleft {
+  width: 55%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1566833017497-830328f5bc5d?q=80&w=1098&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+#rtopright {
+  width: 45%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1722949816287-36005aa5bd96?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 500px) {
+  #main {
+    flex-direction: column;
+  }
+
+  #main #left {
+    width: 100%;
+  }
+
+  #main #right {
+    width: 100%;
+  }
+  #textcenter h1 {
+    font-size: 50px;
+    font-weight: 900;
+  }
+
+  #textcenter p {
+    opacity: 0.6;
+    font-size: 8px;
+    line-height: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
